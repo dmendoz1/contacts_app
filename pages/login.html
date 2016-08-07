@@ -1,0 +1,32 @@
+
+<div class="col-sm-12">
+	<center><h1> Contacts WebApp </h1></center>
+	<form name="signUpForm">
+		<div class="col-sm-6">
+			<h3> Sign Up </h3>
+			<input type="text" class="form-control" id="username" ng-model="signUpInfo.username" username-verify placeholder="Choose Username" required><br />
+			<input type="password" class="form-control" ng-model="signUpInfo.password" placeholder="Choose Password" required><br />
+			<input type="password" class="form-control" ng-model="signUpInfo.verfiypassword" pw-verify="signUpInfo.password" placeholder="Verify Password" required> <br />
+			<button class="btn btn-green pull-right" ng-click="signUserUp()" id="signupBtn" ng-disabled="signUpForm.$invalid"> Sign Up </button> 
+			<span id="username-status"></span> <br/>
+			<span ng-show="signUpForm.$error.pwVerify" class="formInvalidField">Passwords do not match</span>
+		</div>
+	</form>
+	<div class="col-sm-6">
+		<form name="loginForm">
+			<h3> Login </h3>
+			<input type="text" class="form-control" ng-model="loginInfo.username" placeholder="Username" required> <br />
+			<input type="password" class="form-control" ng-model="loginInfo.password" placeholder="Password" required> <br />
+			<button class="btn btn-green pull-right" ng-click="loginUser()" ng-disabled="loginForm.$invalid"> Login </button> <span id="login-status"></span>
+		</form>
+	</div>
+</div>
+
+<div class="popup-container" id="newUserPopup">
+	<div id="newUser-popup" class="popup-content">
+		<p> Signup was successful! Please login. </p>
+		<div class="popup-btn">
+			<button type="button" id="newUserClose-popup" class="btn btn-green pull-right">Close </button>
+		</div>
+	</div>
+</div>

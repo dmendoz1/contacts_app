@@ -1,0 +1,30 @@
+.navbar-default{
+	background-color: white !important; 
+	border: none !important;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	margin-top:10px;
+	float: right;
+}
+
+
+
+.current {
+	background: $main-green;
+}
+
+
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	text-align: center;
+}
+
+
+
+@media screen and (max-width : 768px) {
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		float: none;
+	}
+}

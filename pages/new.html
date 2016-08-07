@@ -1,0 +1,22 @@
+<navigation-bar></navigation-bar>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h2> New Contact </h2>
+			<form name="newContact" novalidate class="form-horizontal">
+				<contact-fields></contact-fields>
+				<button type="button"  ng-click="save()" ng-disabled="newContact.$invalid" class="btn btn-green btn-lg pull-right"> Save! </button>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<div class="popup-container" id="newContactPopup">
+	<div id="update-popup" class="popup-content">
+		<p> Your new contact has been saved! </p>
+		<div class="popup-btn">
+			<button type="button" id="newContactClose-popup" class="btn btn-green pull-right">Close </button>
+		</div>
+	</div>
+</div>

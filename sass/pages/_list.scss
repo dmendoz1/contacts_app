@@ -1,0 +1,35 @@
+thead {
+	background: darken($main-green,25%);
+	cursor: pointer !important;
+}
+
+
+tbody tr:nth-child(odd) {
+    background: $white;
+
+    &:hover {
+    	background: darken($white, 15%) !important;
+    	cursor: pointer !important;
+    }
+}
+
+tbody tr:nth-child(even) {
+    background: $main-green;
+
+    &:hover {
+    	background: darken($main-green, 15%) !important;
+    	cursor: pointer !important;
+    }
+}
+
+
+#no-contacts {
+    display: block;
+    margin: auto;
+    background-color: $main-green;
+    min-height: 150px;
+    padding: 45px;
+    text-align: center;
+    font-size: 25px;
+    visibility: hidden;
+}

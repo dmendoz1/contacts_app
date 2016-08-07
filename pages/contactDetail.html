@@ -1,0 +1,25 @@
+<navigation-bar></navigation-bar>
+
+<form name="updateContact">
+	<contact-fields></contact-fields>
+	<button type="button" ng-click="delete()" class="btn btn-danger btn-lg confirm"> Delete Contact</button> <button type="button"  ng-click="update()" ng-disabled="updateContact.$invalid" class="btn btn-green btn-lg pull-right"> Save! </button>
+</form>
+
+<div class="popup-container" id="contactDeletePopup">
+	<div id="delete-popup" class="popup-content">
+		<p> Are you sure you want to remove this contact?</p>
+		<div class="deletepopup-btn">
+			<button type="button" id="delete-btn" class="btn btn-danger pull-left">Delete</button>
+			<button type="button" id="dontdelete-btn" class="btn btn-warning pull-right">Never mind!</button>
+		</div>
+	</div>
+</div>
+
+<div class="popup-container" id="contactUpdatePopup">
+	<div id="update-popup" class="popup-content">
+		<p> Your contact has been updated!</p>
+		<div class="popup-btn">
+			<button type="button" id="updateContact-close" class="btn btn-green pull-right">Close</button>
+		</div>
+	</div>
+</div>

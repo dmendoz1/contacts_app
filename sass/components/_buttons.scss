@@ -1,0 +1,26 @@
+.btn-green {
+	background-color: darken($main-green, 20%);
+	color: white;
+
+}
+
+
+.popup-btn {
+	position: absolute;
+	bottom: 30px;
+	right: 20px;
+	width: 300px !important;
+	height: 20px;
+}
+
+#delete-btn {
+	position: absolute;
+	left: 20px;
+	bottom: 15px;
+}
+
+#dontdelete-btn {
+	position: absolute;
+	right: 20px;
+	bottom: 15px;
+}
